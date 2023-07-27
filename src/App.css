@@ -1,0 +1,96 @@
+/* App.css */
+
+/* Main container for the entire page */
+.container {
+  display: flex;
+  /* grid-template-columns: auto auto auto auto; */
+  /* flex: wrap; */
+   /* Set to row to place row1 to the left of other rows */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+/* First row containing DateRangePicker, MonthPicker, ProductPicker, and Priority */
+.col {
+  display: grid;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 50%;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  height: 85vh;
+ 
+}
+
+/* Each component in the first row */
+.col > div {
+  width: 100px;
+  height: 20vh;
+  margin-right: 10px;
+}
+
+.sec-container {
+  margin-left: 10px;
+  width: 130%;
+  margin-top: 50px;
+}
+
+/* Second row containing ResolutionTime, ResponseTime, ResolutionDelay, and ResponseDelay */
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
+  flex-grow: 0;
+}
+
+/* Each component in the second row */
+.row1 > div {
+  width: 15%;
+  height: 20vh;
+  margin-right: 10px;
+}
+
+/* Third row containing StatusAllocation and PriorityAllocation */
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
+  flex-grow: 0;
+
+}
+
+/* StatusAllocation component in the third row */
+.statusAllocation {
+  width: 40%;
+  height: 30vh;
+}
+
+/* PriorityAllocation component in the third row */
+.priorityAllocation {
+  width: 20%;
+  height: 30vh;
+}
+
+/* Fourth row containing BubbleChart */
+.row3 {
+  width: 80%;
+  flex-grow: 0;
+}
+
+/* BubbleChart component in the fourth row */
+.bubbleChart {
+  width: 60%;
+  height: 30vh;
+}
