@@ -1,0 +1,49 @@
+.prio-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0%; 
+    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 170px !important; 
+    height: 50% !important; 
+    border-radius: 15px; 
+    margin-top: 50px;
+     
+}
+
+
+.prio-container h4{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: start;
+}
+
+
+.priority {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.priority-box {
+    width: 45px;
+    height:  45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+

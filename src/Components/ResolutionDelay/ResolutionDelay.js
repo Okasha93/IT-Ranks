@@ -1,13 +1,14 @@
 import React, { useState} from 'react';
+import './ResolutionDelay.css';
 
 const ResolutionDelay = () => {
     const [ resolutionDelay, setResolutionDelay ] = useState(0);
 
   return (
-    <div style={{ boxShadow: '5px 5px 25px rgba(0, 0, 0, 0.2)', padding: '10px', width: '25%', borderRadius: '15px' }}>
-      <h1 style={{ color: 'red'}}>1H 10M</h1>
-      <h6>Resolution</h6>
-      <p style={{ fontSize: 10}}>Delay Time</p>
+    <div className='reso-delay-container' >
+      <h1>1H 10M</h1>
+      <h3>Resolution</h3>
+      <h4>Delay Time</h4>
     </div>
   );
 };

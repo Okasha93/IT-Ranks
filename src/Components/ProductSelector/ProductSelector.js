@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import './ProductSelector.css';
+
+
 
 const ProductSelector = ({ onProductSelect }) => {
+  
   const [selectedProducts, setSelectedProducts] = useState([]);
-  const [visibleModules, setVisibleModules] = useState({});
+ 
 
   // Function to handle product selection
   const handleProductSelect = (event) => {
@@ -17,13 +21,6 @@ const ProductSelector = ({ onProductSelect }) => {
     }
   };
 
-  // Function to handle module visibility
-  const toggleModuleVisibility = (product) => {
-    setVisibleModules((prevVisibleModules) => ({
-      ...prevVisibleModules,
-      [product]: !prevVisibleModules[product]
-    }));
-  };
 
   const products = [
     {
@@ -45,9 +42,9 @@ const ProductSelector = ({ onProductSelect }) => {
   ];
 
   return (
-    <div style={{ boxShadow: '5px 5px 25px rgba(0, 0, 0, 0.2)', padding: '10px', width: '110%', maxHeight: '200px', overflowY: 'hidden', borderRadius: '15px', marginTop: '10px', marginBottom: '10px' }}>
-      <h4 style={{ marginTop: '5px' }}>Product Selector</h4>
-      <div style={{ maxHeight: '110px', overflowY: 'scroll' }}>
+    <div className='product-container'>
+      <h4>Product Selector</h4>
+      <div className='product-select'>
       {products.map((product) => (
         <div key={product.name}>
           <label>

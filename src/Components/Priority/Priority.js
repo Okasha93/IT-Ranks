@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './Priority.css';
+
 
 const Priority = ({ onPrioritySelect }) => {
   const priorities = ['P1', 'P2', 'P3', 'P4'];
@@ -13,24 +15,17 @@ const Priority = ({ onPrioritySelect }) => {
   };
 
   return (
-    <div style={{ boxShadow: '5px 5px 25px rgba(0, 0, 0, 0.2)', padding: '10px', width: '110%', borderRadius: '15px' }}>
-      <h4 style={{ marginTop: '5px' }}>Priority</h4>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className='prio-container' >
+      <h4>Priority</h4>
+      <div className='priority'>
         <div style={{ display: 'flex' }}>
           {priorities.slice(0, 2).map((priority) => (
             <div
+              className='priority-box'
               key={priority}
               style={{
-                width: '40px',
-                height: '40px',
-                backgroundColor: selectedPriority === priority ? 'lightblue' : 'rgb(222, 219, 219)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '12px',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                marginRight: '5px',
+                backgroundColor: selectedPriority === priority ? '	#808080' : 'white',
+                color: selectedPriority === priority ? 'white' : 'black',
               }}
               onClick={() => handlePrioritySelect(priority)}
             >
@@ -41,18 +36,11 @@ const Priority = ({ onPrioritySelect }) => {
         <div style={{ display: 'flex', marginTop: '5px' }}>
           {priorities.slice(2).map((priority) => (
             <div
+              className='priority-box'
               key={priority}
               style={{
-                width: '40px',
-                height: '40px',
-                backgroundColor: selectedPriority === priority ? 'lightblue' : 'rgb(222, 219, 219)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '12px',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                marginRight: '5px',
+                backgroundColor: selectedPriority === priority ? '	#808080' : 'white',
+                color: selectedPriority === priority ? 'white' : 'black',
               }}
               onClick={() => handlePrioritySelect(priority)}
             >

@@ -1,0 +1,23 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 170px !important; 
+    height: 45% !important; 
+    border-radius: 15px; 
+}
+
+
+.product-container h4{
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+
+.product-select {
+    font-size: 12px;
+    margin-bottom: 3px;
+    max-height: 110px;
+    overflow: scroll;
+}

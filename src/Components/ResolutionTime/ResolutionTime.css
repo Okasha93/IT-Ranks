@@ -1,0 +1,39 @@
+.reso-time-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0%;
+    padding: 10px;
+    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.6);
+    width: 14% !important;
+    height: 80%;
+    margin-right: 5px;
+    border-radius: 15px ;
+}
+
+
+ 
+
+.reso-time-container h1{
+    color: rgb(241, 170, 170);
+    padding-bottom: 5px;
+    margin-bottom: 5px; 
+    
+}
+
+.reso-time-container h3{
+    padding-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.reso-time-container h4{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+
+

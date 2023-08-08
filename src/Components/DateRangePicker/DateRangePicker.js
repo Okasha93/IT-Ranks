@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import './DateRangePicker.css';
+
+
 
 const DateRangePicker = ({ onDateSelect }) => {
+
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
 
@@ -11,21 +15,23 @@ const DateRangePicker = ({ onDateSelect }) => {
     }
   }, [fromDate, toDate, onDateSelect]); // Add dependencies to the useCallback dependency array
 
+
   // Call the handleDateSelect function whenever fromDate or toDate changes
   useEffect(() => {
     handleDateSelect();
   }, [fromDate, toDate, handleDateSelect]);
 
+
   return (
-    <div style={{ boxShadow: '5px 5px 25px rgba(0, 0, 0, 0.2)', padding: '10px', width: '110%', height: '100px', borderRadius: '15px', marginBottom: '10px' }}>
-      <div  style={{ padding: '15px'}}> 
+    <div className='date-container' >
+      <div className='from-date'> 
         <input
           type="date"
           value={fromDate}
           onChange={(e) => setFromDate(e.target.value)}
         />
       </div>
-      <div style={{ padding: '15px'}}>
+      <div className='to-date'>
         <input
           type="date"
           value={toDate}
@@ -37,3 +43,8 @@ const DateRangePicker = ({ onDateSelect }) => {
 };
 
 export default DateRangePicker;
+
+
+
+
+

@@ -1,5 +1,5 @@
-// MonthPicker.js
 import React, { useState } from 'react';
+import './MonthPicker.css';
 
 const MonthPicker = ({ onMonthSelect }) => {
   const [selectedMonths, setSelectedMonths] = useState([]);
@@ -23,9 +23,9 @@ const MonthPicker = ({ onMonthSelect }) => {
   ];
 
   return (
-    <div style={{ boxShadow: '5px 5px 25px rgba(0, 0, 0, 0.2)', padding: '10px', width: '110%', maxHeight: '150px', overflowY: 'hidden',  borderRadius: '15px' }}>
-      <h4 style={{ marginBottom: '10px', marginTop:'5px' }} >Month</h4>
-      <div style={{ maxHeight: '100px', overflowY: 'scroll' }} >
+    <div className='month-container'>
+      <h4 >Month</h4>
+      <div className='month-picker' >
       {months.map((month) => (
         <div key={month}>
           <label>
